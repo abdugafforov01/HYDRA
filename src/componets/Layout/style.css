@@ -1,0 +1,13 @@
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+    background-image: url('../../assets/svg/Vector\ 3.svg'),url('../../assets/svg/Vector\ 2.svg'),url('../../assets/svg/Vector\ 1.svg'),url('../../assets/svg/Vector\ 4.svg');
+    background-repeat: no-repeat;
+    background-position-x: 640px,950px,980px,0px;
+    background-position-y: 400px,0px,120px,280px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        background-image: none;
+    }
+}

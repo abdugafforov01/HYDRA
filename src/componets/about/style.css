@@ -1,0 +1,10 @@
+.contain{
+    background-image: url('../../assets/svg/Vector\ 7.svg'),url('../../assets/svg/Vector\ 8.svg');
+    background-repeat: no-repeat;
+    background-position-y: 350px,600px;
+}
+@media screen and (max-width:480px) {
+    .contain{
+        background-image: none;
+    }
+}

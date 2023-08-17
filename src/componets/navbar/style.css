@@ -1,0 +1,252 @@
+.navbar {
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 130px;
+    background-color: #302C42;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .navbar {
+        height: 90px;
+        padding-top: 20px;
+    }
+}
+
+.logo {
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .logo {
+        height: 59px;
+        width: 69px;
+        margin-left: 20px;
+    }
+
+    .frame {
+        width: 46px;
+        height: 28px;
+    }
+}
+
+.frame {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+
+.contact {
+    text-transform: uppercase;
+    border: 2px solid #FFFF;
+    background: none;
+    color: #FFFF;
+    font-size: 12px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: #8462D0;
+    border: 2px solid #8462D0;
+    transform: matrix(1, 2, 3);
+}
+
+.contact:active {
+    background: none;
+    border: 2px solid #FFFF;
+}
+
+.join {
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(161, 129, 226, 1) 0%, rgba(171, 165, 210, 1) 34%, rgba(204, 192, 217, 1) 100%);
+    color: #343045;
+    font-weight: 700;
+    font-size: 12px;
+    width: 130px;
+    padding-top: 2px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+.join:hover {
+    background: none;
+    color: #FFF;
+    border: 1px solid #C1A6FF;
+    transition: 0.2s;
+}
+
+.join:active {
+    background: linear-gradient(90deg, rgba(161, 129, 226, 1) 0%, rgba(171, 165, 210, 1) 34%, rgba(204, 192, 217, 1) 100%);
+    border: 0;
+    color: #343045;
+    transition: 0.2s;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 60px;
+    padding-top: 10px;
+}
+
+.menyu {
+    text-decoration: none;
+}
+
+.menu-text a {
+    color: #FFFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    padding: 0 10px;
+}
+
+.menu-text a:after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #4282f9;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.3s;
+    border-radius: 5px  ;
+}
+
+.active {
+    color: #4282f9;
+}
+
+.menu-text a:hover:after {
+    width: 100%;
+}
+
+.menu-text a:active {
+    color: #4B6FE4;
+}
+
+.menyu {
+    text-decoration: none;
+    color: red;
+}
+
+.nav-toggler .line1 {
+    width: 33px;
+    height: 3px;
+    background: darkgray;
+    border-radius: 5px;
+    transition: 0.3s;
+
+
+}
+
+.nav-toggler .line2 {
+    width: 33px;
+    height: 3px;
+    background: darkgray;
+    border-radius: 5px;
+    margin-top: 6px;
+    transition: 0.3s;
+
+}
+
+.nav-toggler .line3 {
+    width: 33px;
+    height: 3px;
+    background: darkgray;
+    margin-top: 6px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+
+}
+
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid blue;
+}
+
+@media screen and (max-width:480px) {
+    .active {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .nav-toggler {
+        display: block;
+        margin-right: 25px;
+    }
+
+    .menu {
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 100%;
+        text-align: center  ;
+        height: 100vh;
+        background: #302C42;
+        flex-direction: column;
+        z-index: 1;
+        transform: translate(100%);
+        transition: 0.5s ease-in;
+        border-top: 1px solid gainsboro;
+        padding-top: 50px;
+    }
+
+    .btns {
+        display: none;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-48deg) translate(-6px, 7px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(48deg) translate(-4px, -8px);
+}

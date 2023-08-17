@@ -1,0 +1,40 @@
+.hard {
+    background-image: url('../../assets/svg/img.svg');
+    height: 303px;
+    width: 1288px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:480px) {
+    .hard {
+        width: 348px;
+        height: 163px;
+        border-radius: 160px;
+        margin: 60px auto;
+    }
+}
+
+.flex {
+    background-image: url('../../assets/svg/Vector\ 15.svg');
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+}
+
+@media screen and (max-width:480px) {
+    .flex {
+        background-image: none;
+    }
+}
+
+.carusel {
+    width: 311px;
+    margin: 0 auto;
+
+}
+.caruse{
+    margin: 0 auto;
+    
+}
